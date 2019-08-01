@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+            .llcontent{
+                width: 100px;
+                height: 100px;
+                background: red;
+                color: #fff;
+            }
+    
+    </style>
+</head>
+<body>
+    <div class="llcontent">
+
+    </div>
+</body>
+
+<!-- //  如果我们页面过多，总是写 requirejs.config 不太好，感觉 ugly。RequireJS 为我们提供了一种方式。 -->
+<!-- 以app.js为根js文件 -->
+<script  data-main="js/app.js" src="https://cdn.bootcss.com/require.js/2.3.6/require.js"></script>
+
+<script>
+
+    // js模块路径过长时用requirejs.config
+    //  requirejs.config({
+    //     //By default load any module IDs from js/lib
+    //     baseUrl: 'js/lib', //模块根目录
+    //     //except, if the module ID starts with "app",
+    //     //load it from the js/app directory. paths
+    //     //config is relative to the baseUrl, and
+    //     //never includes a ".js" extension since
+    //     //the paths config could be for a directory.
+    //     paths: {
+    //         "jquery" : ["http://libs.baidu.com/jquery/2.0.3/jquery"] //拥有别名的模块
+    //     }
+    // })
+       // 引入js模块
+    // require(["js/lib/index.js","jquery"], function () {
+    //      // do something after loading index.js
+
+    //      console.log($);
+         
+    //  })
+
+ 
+ </script>
+
+</html>
+
